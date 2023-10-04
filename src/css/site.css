@@ -7,6 +7,8 @@
     font-family: 'Roboto', sans-serif;
     --dark-purple: #801cbb;
     --black: #040404;
+    --dark-grey: #1d1d1d;
+    --light-grey: #616060;
     --white: #FFF;
 }
 
@@ -44,18 +46,17 @@ html, body {
 .profile-pic {
     height: 300px;
     width: 300px;
-    border-radius: 10px;
-    border: 6px solid var(--dark-purple);
+    border: 6px solid var(--dark-grey);
     border-radius: 50%;
 }
 
 .info-description {
     width: 80%;
     margin: 20px auto;
-    padding: 10px;
-    border: 3px solid var(--dark-purple);
+    padding: 20px;
     border-radius: 10px;
     font-size: 20px;
+    background-color: var(--dark-grey)
 }
 
 .info-paragraph {
@@ -67,7 +68,7 @@ html, body {
     justify-content: space-evenly;
     background-color: #FFF;
     border-radius: 10px;
-    border: 6px solid var(--dark-purple);
+    border: 6px solid var(--dark-grey);
     margin: 0 auto;
     padding: 5px 0;
     width: 70%;
@@ -86,9 +87,9 @@ html, body {
 
 .section-div {
     padding: 0;
-    border: 6px solid var(--dark-purple);
     border-radius: 10px;
     padding-bottom: 20px;
+    background-color: var(--dark-grey);
 }
 
 .section-title {
@@ -116,9 +117,9 @@ html, body {
 
 .competencias {
     background-color: #FFF;
-    color: var(--dark-purple);
+    color: var(--dark-grey);
     font-weight: bold;
-    padding: 40px;
+    padding: 80px 0;
 }
 
 .competencias-list-div {
@@ -145,11 +146,15 @@ html, body {
 .index-project-picture {
     height: 331px;
     width: 672px;
-    border: solid var(--dark-purple);
+    border: solid var(--dark-grey);
+}
+
+.project-page-picture {
+    border: solid var(--dark-grey);
 }
 
 #contact-section {
-    border-top: 5px solid var(--dark-purple);
+    border-top: 5px solid var(--dark-grey);
     border-radius: 5px;
 }
 
@@ -212,7 +217,7 @@ html, body {
     margin: 40px 0;
     color: white;
     background-color: transparent;
-    border: 6px solid var(--dark-purple);
+    border: 6px solid var(--dark-grey);
     border-radius: 10px;
     font-weight: bold;
     font-size: 25px;

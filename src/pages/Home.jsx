@@ -11,7 +11,7 @@ export default function Home() {
                 </div>
             </div>
             
-            <div className="hidden">
+            <div>
                 <div className="info-description">
                     <div className="info-paragraph">
                         Olá, meu nome é Arthur de Castro Geromello.
@@ -19,7 +19,12 @@ export default function Home() {
                     </div>
                     <div className="info-paragraph">
                         Minhas principais áreas de expertise incluem C#, SQL, HTML, Javascript, React, Blazor e Docker.
-                        Estou sempre buscando expandir meu conhecimento e explorar novas tecnologias para aprimorar minhas habilidades.
+                        Diariamente procuro aperfeiçoar meus conhecimentos, sempre com o intuito de utilizar as melhores
+                        tecnologias e as melhoras práticas da programação.
+                    </div>
+                    <div className="info-paragraph">
+                        Hoje em dia para mim, programação se tornou um lifestyle, meu objetivo é se tornar um desenvolvedor
+                        extremamente capaz de resolver qualquer problema da melhor maneira possível.
                     </div>
                     <div className="info-paragraph">
                         Neste portfólio, apresento os meus projetos que desenvolvi.
@@ -33,40 +38,40 @@ export default function Home() {
                 </div>
             </div>
             
-            <div className="hidden">
+            <div>
                 <div className="section-title">
                     <div>Desenvolvimento Web FullStack com C# / React / Blazor</div>
                 </div>
             
                 <div className="icons-div">
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-csharp" src="https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png" />
+                        <img className="language-icons" alt="icone-csharp" src="src\assets\imgs\language-icons\csharp.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-sql" src="https://cdn-icons-png.flaticon.com/512/4299/4299956.png" />
+                        <img className="language-icons" alt="icone-sql" src="src\assets\imgs\language-icons\sql.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-html" src="https://cdn-icons-png.flaticon.com/512/919/919827.png" />
+                        <img className="language-icons" alt="icone-html" src="src\assets\imgs\language-icons\html.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-css" src="https://cdn-icons-png.flaticon.com/512/919/919826.png" />
+                        <img className="language-icons" alt="icone-css" src="src\assets\imgs\language-icons\css.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-javascript" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" />
+                        <img className="language-icons" alt="icone-javascript" src="src\assets\imgs\language-icons\javascript.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-react" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" />
+                        <img className="language-icons" alt="icone-react" src="src\assets\imgs\language-icons\react.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-docker" src="https://cdn-icons-png.flaticon.com/512/5969/5969059.png" />
+                        <img className="language-icons" alt="icone-docker" src="src\assets\imgs\language-icons\docker.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-blazor" src="https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/16/2019/04/BrandBlazor_nohalo_1000x.png" />
+                        <img className="language-icons" alt="icone-blazor" src="src\assets\imgs\language-icons\blazor.png" />
                     </div>
                 </div>
             </div>
             
-            <div className="hidden">
+            <div>
                 <div className="other-categories-div">
                     <div className="section-div">
                         <div className="section-title">
@@ -120,7 +125,7 @@ export default function Home() {
                 </div>
             </div>
     
-            <div className="hidden">
+            <div>
                 <div className="competencias">
                     <div className="section-title">
                         Competências
@@ -136,7 +141,7 @@ export default function Home() {
                 </div>
             </div>
                 
-            <div className="hidden">
+            <div>
                 <div className="section-title" id="section-id">
                     Meus projetos
                 </div>
