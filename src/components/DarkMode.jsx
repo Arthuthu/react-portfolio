@@ -1,17 +1,16 @@
 import React from 'react';
 import '../css/site.css';
 
-export default function DarkMode({ themeColor, setThemeColor }) {
-
-    console.log(themeColor)
+export default function DarkMode({ setThemeColor }) {
 
     let clickedClass = "clicked";
     const body = document.body;
     const lightTheme = "light";
     const darkTheme = "dark";
+    let theme;
 
     if (localStorage) {
-        const theme = localStorage.getItem("theme");
+        theme = localStorage.getItem("theme");
         if (theme === lightTheme || theme === darkTheme) {
             body.classList.add(theme);
         } else {
@@ -20,7 +19,7 @@ export default function DarkMode({ themeColor, setThemeColor }) {
     }
 
     const switchTheme = (e) => {
-        if (themeColor === darkTheme) {
+        if (theme === darkTheme) {
             body.classList.replace(darkTheme, lightTheme);
             e.target.classList.remove(clickedClass);
             localStorage.setItem("theme", "light");
@@ -35,7 +34,7 @@ export default function DarkMode({ themeColor, setThemeColor }) {
 
     return (
         <div className="center-text" onClick={(e) => switchTheme(e)}>
-            <img src={themeColor === "dark" ? "/imgs/moonicon.png" : "/imgs/sunicon.png"}
+            <img src={theme === "dark" ? "/imgs/moon-icon.png" : "/imgs/sun-icon.png"}
                 className="theme-icon"/>
         </div>
     );
