@@ -1,3 +1,4 @@
+//Content animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -7,6 +8,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
+console.log("hi")
+
+//Carousel
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 

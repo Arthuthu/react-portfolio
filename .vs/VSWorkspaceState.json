@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\pages",
+    "\\src\\pages\\Projects"
   ],
-  "SelectedNode": "\\vite.config.js",
+  "SelectedNode": "\\src\\pages\\Projects\\Roadmap.jsx",
   "PreviewInSolutionExplorer": false
 }

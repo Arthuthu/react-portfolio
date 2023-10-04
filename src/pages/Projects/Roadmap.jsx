@@ -1,7 +1,27 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Roadmap() {
+    const maxNumberOfSlides = 12;
+    const [slidePosition, setSlidePosition] = useState(1);
+
+    function incrementSlidePosition() {
+        if(slidePosition === maxNumberOfSlides){
+            setSlidePosition(1)
+        } else {
+            setSlidePosition(slidePosition => slidePosition + 1)
+        }
+    }
+
+    function decrementSlidePosition() {
+        if(slidePosition === 1){
+            setSlidePosition(maxNumberOfSlides)
+        } else {
+            setSlidePosition(slidePosition => slidePosition - 1)
+        }
+    }
+
     return(
         <>
             <div className="section-title">
@@ -35,44 +55,11 @@ export default function Roadmap() {
    
             <div>
                 <div className="carousel" data-carousel>
-                    <button className="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-                    <button className="carousel-button next" data-carousel-button="next">&#8658;</button>
+                <button onClick={decrementSlidePosition} className="carousel-button prev">&#8656;</button>
+                <button onClick={incrementSlidePosition} className="carousel-button next">&#8658;</button>
                     <ul className="project-images-div" data-slides>
                     <li className="slide" data-active>
-                            <img src="src\assets\imgs\projects\Roadmap\1.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Roadmap\2.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Roadmap\3.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Roadmap\4.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Roadmap\5.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Roadmap\6.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Roadmap\7.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Roadmap\8.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Roadmap\9.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Roadmap\10.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Roadmap\11.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Roadmap\12.png" className="project-page-picture" alt="Imagem projeto"/>
+                            <img src={`src/assets/imgs/projects/Roadmap/${slidePosition}.png`} className="project-page-picture" alt="Imagem projeto"/>
                         </li>
                     </ul>
                 </div>

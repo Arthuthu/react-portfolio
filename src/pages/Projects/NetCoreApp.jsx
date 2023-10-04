@@ -1,7 +1,27 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function NetCoreApp() {
+    const maxNumberOfSlides = 5;
+    const [slidePosition, setSlidePosition] = useState(1);
+
+    function incrementSlidePosition() {
+        if(slidePosition === maxNumberOfSlides){
+            setSlidePosition(1)
+        } else {
+            setSlidePosition(slidePosition => slidePosition + 1)
+        }
+    }
+
+    function decrementSlidePosition() {
+        if(slidePosition === 1){
+            setSlidePosition(maxNumberOfSlides)
+        } else {
+            setSlidePosition(slidePosition => slidePosition - 1)
+        }
+    }
+
     return(
         <>
             <div className="section-title">
@@ -36,23 +56,11 @@ export default function NetCoreApp() {
             
             <div aria-label="Imagens do projeto">
                 <div className="carousel" data-carousel>
-                    <button className="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-                    <button className="carousel-button next" data-carousel-button="next">&#8658;</button>
+                <button onClick={decrementSlidePosition} className="carousel-button prev">&#8656;</button>
+                <button onClick={incrementSlidePosition} className="carousel-button next">&#8658;</button>
                     <ul className="project-images-div" data-slides>
                         <li className="slide" data-active>
-                            <img src="src\assets\imgs\projects\NetCoreApp\1.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\NetCoreApp\2.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\NetCoreApp\3.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\NetCoreApp\4.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\NetCoreApp\5.png" className="project-page-picture" alt="Imagem projeto"/>
+                            <img src={`src/assets/imgs/projects/NetCoreApp/${slidePosition}.png`} className="project-page-picture" alt="Imagem projeto"/>
                         </li>
                     </ul>
                 </div>

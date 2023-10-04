@@ -1,7 +1,27 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Clinica() {
+    const maxNumberOfSlides = 14;
+    const [slidePosition, setSlidePosition] = useState(1);
+
+    function incrementSlidePosition() {
+        if(slidePosition === maxNumberOfSlides){
+            setSlidePosition(1)
+        } else {
+            setSlidePosition(slidePosition => slidePosition + 1)
+        }
+    }
+
+    function decrementSlidePosition() {
+        if(slidePosition === 1){
+            setSlidePosition(maxNumberOfSlides)
+        } else {
+            setSlidePosition(slidePosition => slidePosition - 1)
+        }
+    }
+
     return(
         <>
             <div className="section-title">
@@ -33,50 +53,11 @@ export default function Clinica() {
     
             <div aria-label="Imagens do projeto">
                 <div className="carousel" data-carousel>
-                    <button className="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-                    <button className="carousel-button next" data-carousel-button="next">&#8658;</button>
+                <button onClick={decrementSlidePosition} className="carousel-button prev">&#8656;</button>
+                <button onClick={incrementSlidePosition} className="carousel-button next">&#8658;</button>
                     <ul className="project-images-div" data-slides>
                         <li className="slide" data-active>
-                            <img src="src\assets\imgs\projects\Clinica\1.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\2.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\3.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\4.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\5.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\6.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\7.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\8.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\9.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\10.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\11.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\12.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\13.png" className="project-page-picture" alt="Imagem projeto"/>
-                        </li>
-                        <li className="slide">
-                            <img src="src\assets\imgs\projects\Clinica\14.png" className="project-page-picture" alt="Imagem projeto"/>
+                            <img src={`src/assets/imgs/projects/Clinica/${slidePosition}.png`} className="project-page-picture" alt="Imagem projeto"/>
                         </li>
                     </ul>
                 </div>
