@@ -31,6 +31,11 @@ html, body {
     text-align: center;
 }
 
+.center-margin {
+    text-align: center;
+    margin: 2rem;
+}
+
 .profile-pic-div {
     text-align: center;
     margin: 50px 0;
@@ -308,15 +313,14 @@ html, body {
     right: 1rem;
 }
 
-/*
-.hidden {
-    opacity: 0;
-    transition: all 1s;
-}
-*/
-
 .show {
     opacity: 1;
+}
+
+.not-found {
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px;
 }
 
 /* Mobile */

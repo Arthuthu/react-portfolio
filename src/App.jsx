@@ -6,6 +6,7 @@ import Clinica from "./pages/Projects/Clinica"
 import NetCoreApp from "./pages/Projects/NetCoreApp"
 import Roadmap from "./pages/Projects/Roadmap"
 import OldPortfolio from "./pages/Projects/OldPortfolio"
+import NotFound from "./pages/NotFound"
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Layout />}>
@@ -14,6 +15,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path="netcoreapp" element={<NetCoreApp />}/>
     <Route path="roadmap" element={<Roadmap />}/>
     <Route path="oldportfolio" element={<OldPortfolio />}/>
+    <Route path="*" element={<NotFound />} />
   </Route>
 ))
 

@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Footer() {
     return (
-    <div>
+    <footer>
         <div className="section-title" id="contact-section">
             Contato
         </div>
@@ -52,6 +52,6 @@ export default function Footer() {
                 </a>
             </div>
         </div>
-    </div>
+    </footer>
     )
 }
