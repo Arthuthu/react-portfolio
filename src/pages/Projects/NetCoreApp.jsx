@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function NetCoreApp() {
     return(
@@ -64,60 +65,6 @@ export default function NetCoreApp() {
                 
                 <div class="project-button-div">
                     <a href="../index.html" class="portfolio-button-anchor">Voltar</a>
-                </div>
-            </div>
-
-            <div>
-                <div class="section-title" id="contact-section">
-                    Contato
-                </div>
-                <div class="contato-div">
-                    <div>
-                        <div class="contato-info-div">
-                            <div>
-                                <img class="contact-icon" alt="whatsapp-icon" src="../imgs/whatsicon.png" />
-                            </div>
-                            <div class="display-flex-justify-evenly">
-                                <div class="contact-section-title">
-                                    Whatsapp:
-                                </div>
-                                <div>
-                                    (17) 99782-4891
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contato-info-div">
-                            <div>
-                                <img class="contact-icon" alt="github-icon" src="../imgs/githubicon.png" />
-                            </div>
-                            <a href="https://github.com/Arthuthu" class="link">
-                                Github
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="contato-info-div">
-                            <div>
-                                <img class="contact-icon" alt="email-icon" src="../imgs/emailicon.png" id="email-icon"/>
-                            </div>
-                            <div class="display-flex-justify-evenly" id="email-div">
-                                <div class="contact-section-title" id="email-section-title">
-                                    Email:
-                                </div>
-                                <div>
-                                    arthurgeromello@hotmail.com
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contato-info-div">
-                            <div>
-                                <img class="contact-icon" alt="linkedin-icon" src="../imgs/linkedinicon.png" />
-                            </div>
-                            <a href="https://www.linkedin.com/in/arthur-geromello-ab44a8159/" class="link">
-                                Linkedin
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </>

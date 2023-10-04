@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 export default function Home() {
     return (
@@ -144,17 +145,17 @@ export default function Home() {
                         <div className="project-title">
                             Roadmaps
                         </div>
-                        <a href="./pages/roadmaps.html">
+                        <Link to="/roadmap">
                             <img src="src\assets\imgs\projects\Roadmap\1.png" className="index-project-picture" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="project-div">
                         <div className="project-title">
                             Antigo portfólio
                         </div>
-                        <a href="./pages/oldportfolio.html">
+                        <Link to="oldportfolio">
                             <img src="src\assets\imgs\projects\OldPortfolio\1.png" className="index-project-picture" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="projects-div">
@@ -162,17 +163,17 @@ export default function Home() {
                         <div className="project-title">
                             NetCore
                         </div>
-                        <a href="./pages/netcoreapp.html">
+                        <Link to="netcoreapp">
                             <img src="src\assets\imgs\projects\NetCoreApp\1.png" className="index-project-picture" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="project-div">
                         <div className="project-title">
                             Clinica
                         </div>
-                        <a href="./pages/clinica.html">
+                        <Link to="clinica">
                             <img src="src\assets\imgs\projects\Clinica\1.png" className="index-project-picture" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
