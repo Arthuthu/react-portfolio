@@ -8,16 +8,49 @@
     --dark-purple: #801cbb;
     --black: #040404;
     --dark-grey: #1d1d1d;
-    --light-grey: #616060;
+    --light-grey: #e2e2e2;
     --white: #FFF;
 }
 
 html, body {
-    background-color: var(--black);
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--white);
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
+}
+
+body.dark {
+    --background-color: var(--black);
+    --text-color: var(--white)
+}
+
+body.light {
+    --background-color: var(--white);
+    --text-color: var(--black)
+}
+
+body.light .info-description,
+body.light .section-div {
+    background-color: var(--light-grey);
+}
+
+body.light a {
+    color: var(--black)
+}
+
+body.light .competencias {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#darkMode {
+    background-size: 30px;
+    width: 45px;
+    height: 45px;
+    filter: grayscale(100%);
+    border: none;
+    border-radius: 50%;
 }
 
 *, *::before, *::after {

@@ -1,6 +1,10 @@
 import React from "react"
 
 export default function Footer() {
+
+    let theme = localStorage.getItem("theme")
+    console.log(theme)
+
     return (
     <footer>
         <div className="section-title" id="contact-section">
@@ -45,7 +49,8 @@ export default function Footer() {
             </div>
             <div className="contato-info-div">
                 <div>
-                    <img className="contact-icon" alt="linkedin-icon" src="/imgs\linkedinicon.png" />
+                    <img className="contact-icon" alt="linkedin-icon" 
+                    src={`/imgs/${theme}-linkedin-icon.png`}/>
                 </div>
                 <a href="https://www.linkedin.com/in/arthur-geromello-ab44a8159/" className="link">
                     Linkedin
