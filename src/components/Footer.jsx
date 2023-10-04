@@ -1,6 +1,8 @@
 import React from "react"
 
-export default function Footer({ themeColor, setThemeColor }) {
+export default function Footer() {
+
+    let themeColor =  localStorage.getItem("theme")
 
     return (
         <footer>

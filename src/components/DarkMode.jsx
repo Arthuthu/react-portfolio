@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/site.css';
 
 export default function DarkMode({ themeColor, setThemeColor }) {
+
     let clickedClass = "clicked";
     const body = document.body;
     const lightTheme = "light";

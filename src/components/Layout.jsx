@@ -4,7 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 export default function Layout() {
-    const [themeColor, setThemeColor] = useState("dark");
+    const [themeColor, setThemeColor] = useState("");
 
     return (
         <div>
@@ -12,7 +12,7 @@ export default function Layout() {
             <main>
                 <Outlet />
             </main>
-            <Footer themeColor={themeColor} setThemeColor={setThemeColor}/>
+            <Footer/>
         </div>
     );
 }
