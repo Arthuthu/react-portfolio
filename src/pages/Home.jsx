@@ -1,13 +1,25 @@
 import React from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
 export default function Home() {
+    const maximumNumberOfProfilePictures = 2;
+    const [profilePicture, setProfilePicture] = useState(1)
+
+    function changeProfilePicture() {
+        if(profilePicture === maximumNumberOfProfilePictures) {
+            setProfilePicture(1)
+        } else {
+            setProfilePicture(profilePicture => profilePicture + 1)
+        }
+    }
+
     return (
         <>
             <div>
                 <div className="profile-pic-div">
-                    <img src="https://media.licdn.com/dms/image/D4D03AQFBfvqc9GSVpg/profile-displayphoto-shrink_800_800/0/1665262332486?e=1697673600&v=beta&t=rhQ3i0gYxoewWG7NSEIu2ofdAhF_MmYndpA3taUl5bg" 
-                    alt="linkedin-picture" className="profile-pic"/>
+                    <img src={`src/assets/imgs/profile/${profilePicture}.png`} onClick={changeProfilePicture}
+                    alt="profile-picture" className="profile-pic"/>
                 </div>
             </div>
             
@@ -131,11 +143,20 @@ export default function Home() {
                         Competências
                     </div>
                     <div className="competencias-list-div">
-                        <div className="lists-div">
-                            <ul>
-                                <li>Inglês (Avançado)</li>
-                                <li className="competencias-eng">Engenheiro da Computação - UNIFEV (Centro Universitário de Votuporanga)</li>
-                            </ul>
+                        <div className="competencias-div">
+                            <div className="competencias-label">Inglês (Fluente)</div>
+                            <div className="center-margin">
+                                Ja faz muito tempo que eu venho estudando e utilizando o Inglês
+                                no meu dia a dia, e hoje eu posso dizer que eu práticamente tenho um Inglês fluente.
+                                Todo conteúdo que eu pesquiso ou estudo sobre na internet, primeiramente eu pesquiso em
+                                Inglês, e devido a isso, aprender se torna mais facil.
+                            </div>
+                            <div className="competencias-label">Engenheiro da Computação - UNIFEV (Centro Universitário de Votuporanga)</div>
+                            <div className="center-margin">
+                                Eu ja estou no meu ultimo ano da Engenharia de Computação e ganhei muito conhecimento durante todo esse tempo.
+                                Hoje eu ja sei a carreira que eu quero seguir e pretendo continuar estudando continuamente para poder me 
+                                aperfeiçoar cada vez mais.
+                            </div>
                         </div>
                     </div>
                 </div>

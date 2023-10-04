@@ -50,6 +50,12 @@ html, body {
     border-radius: 50%;
 }
 
+.profile-pic:hover {
+    transition: 500ms;
+    border: 6px solid var(--light-grey);
+    cursor: pointer;
+}
+
 .info-description {
     width: 80%;
     margin: 20px auto;
@@ -85,6 +91,13 @@ html, body {
     margin: 40px 0;
 }
 
+.lists-div, .lists-div>ul {
+    text-align: center;
+    font-size: 1.3rem;
+    list-style: none;
+    padding: 0;
+}
+
 .section-div {
     padding: 0;
     border-radius: 10px;
@@ -93,16 +106,25 @@ html, body {
 }
 
 .section-title {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
 }
 
-.lists-div, .lists-div > ul > li {
+.competencias-label {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.competencias-div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    list-style: none;
+    width: 80%;
+    margin: auto;
     font-size: 20px;
 }
 
@@ -110,21 +132,11 @@ html, body {
     margin-top: 50px;
 }
 
-.lists-div > ul {
-    padding: 0;
-    margin: 0;
-}
-
 .competencias {
     background-color: #FFF;
     color: var(--dark-grey);
     font-weight: bold;
-    padding: 80px 0;
-}
-
-.competencias-list-div {
-    margin-bottom: 20px;
-    font-size: 200px;    
+    padding: 0 0 50px 0;
 }
 
 .projects-div {
@@ -345,11 +357,7 @@ html, body {
     .other-categories-div {
         flex-direction: column;
     }
-
-    .competencias-eng {
-        text-align: center;
-    }
-
+    
     .section-div {
         border-radius: 0;
     }
