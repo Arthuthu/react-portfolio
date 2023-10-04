@@ -1,5 +1,3 @@
-/*
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -31,5 +29,3 @@ buttons.forEach(button => {
         delete activeSlide.dataset.active
     })
 })
-
-*/
