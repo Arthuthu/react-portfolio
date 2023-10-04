@@ -10,7 +10,6 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
 buttons.forEach(button => {
