@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 export default function Clinica() {
     return(
         <>
+            <div className="section-title">
+                Clinica
+            </div>
+
             <div>
-                <div className="section-title">
-                    Clinica
-                </div>
-            
                 <div className="info-description">
                     <div className="info-paragraph">
                         Este projeto surgiu com o propósito de suprir as demandas essenciais das clínicas, possibilitando o registro detalhado das mesmas através de uma plataforma web intuitiva. Uma vez cadastrada,
