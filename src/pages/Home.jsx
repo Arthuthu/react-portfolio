@@ -57,28 +57,28 @@ export default function Home() {
             
                 <div className="icons-div">
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-csharp" src="src\assets\imgs\language-icons\csharp.png" />
+                        <img className="language-icons" alt="icone-csharp" src="/imgs\language-icons\csharp.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-sql" src="src\assets\imgs\language-icons\sql.png" />
+                        <img className="language-icons" alt="icone-sql" src="/imgs\language-icons\sql.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-html" src="src\assets\imgs\language-icons\html.png" />
+                        <img className="language-icons" alt="icone-html" src="/imgs\language-icons\html.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-css" src="src\assets\imgs\language-icons\css.png" />
+                        <img className="language-icons" alt="icone-css" src="/imgs\language-icons\css.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-javascript" src="src\assets\imgs\language-icons\javascript.png" />
+                        <img className="language-icons" alt="icone-javascript" src="/imgs\language-icons\javascript.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-react" src="src\assets\imgs\language-icons\react.png" />
+                        <img className="language-icons" alt="icone-react" src="/imgs\language-icons\react.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-docker" src="src\assets\imgs\language-icons\docker.png" />
+                        <img className="language-icons" alt="icone-docker" src="/imgs\language-icons\docker.png" />
                     </div>
                     <div className="center-text">
-                        <img className="language-icons" alt="icone-blazor" src="src\assets\imgs\language-icons\blazor.png" />
+                        <img className="language-icons" alt="icone-blazor" src="/imgs\language-icons\blazor.png" />
                     </div>
                 </div>
             </div>
@@ -172,7 +172,7 @@ export default function Home() {
                             Roadmaps
                         </div>
                         <Link to="/roadmap">
-                            <img src="src\assets\imgs\projects\Roadmap\1.png" className="index-project-picture" />
+                            <img src="/imgs\projects\Roadmap\1.png" className="index-project-picture" />
                         </Link>
                     </div>
                     <div className="project-div">
@@ -180,7 +180,7 @@ export default function Home() {
                             Antigo portfólio
                         </div>
                         <Link to="oldportfolio">
-                            <img src="src\assets\imgs\projects\OldPortfolio\1.png" className="index-project-picture" />
+                            <img src="/imgs\projects\OldPortfolio\1.png" className="index-project-picture" />
                         </Link>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ export default function Home() {
                             NetCore
                         </div>
                         <Link to="netcoreapp">
-                            <img src="src\assets\imgs\projects\NetCoreApp\1.png" className="index-project-picture" />
+                            <img src="/imgs\projects\NetCoreApp\1.png" className="index-project-picture" />
                         </Link>
                     </div>
                     <div className="project-div">
@@ -198,7 +198,7 @@ export default function Home() {
                             Clinica
                         </div>
                         <Link to="clinica">
-                            <img src="src\assets\imgs\projects\Clinica\1.png" className="index-project-picture" />
+                            <img src="/imgs\projects\Clinica\1.png" className="index-project-picture" />
                         </Link>
                     </div>
                 </div>

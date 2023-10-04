@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="contato-div">
             <div className="contato-info-div">
                 <div>
-                    <img className="contact-icon" alt="whatsapp-icon" src="src\assets\imgs\whatsicon.png" />
+                    <img className="contact-icon" alt="whatsapp-icon" src="/imgs\whatsicon.png" />
                 </div>
                 <div className="display-flex-justify-evenly">
                     <div className="contact-section-title">
@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
             <div className="contato-info-div">
                 <div>
-                    <img className="contact-icon" alt="github-icon" src="src\assets\imgs\githubicon.png" />
+                    <img className="contact-icon" alt="github-icon" src="/imgs\githubicon.png" />
                 </div>
                 <a href="https://github.com/Arthuthu" className="link">
                     Github
@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="contato-div">
             <div className="contato-info-div">
                 <div>
-                    <img className="contact-icon" alt="email-icon" src="src\assets\imgs\emailicon.png" />
+                    <img className="contact-icon" alt="email-icon" src="/imgs\emailicon.png" />
                 </div>
                 <div className="display-flex-justify-evenly">
                     <div className="contact-section-title">
@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
             <div className="contato-info-div">
                 <div>
-                    <img className="contact-icon" alt="linkedin-icon" src="src\assets\imgs\linkedinicon.png" />
+                    <img className="contact-icon" alt="linkedin-icon" src="/imgs\linkedinicon.png" />
                 </div>
                 <a href="https://www.linkedin.com/in/arthur-geromello-ab44a8159/" className="link">
                     Linkedin
