@@ -1,12 +1,11 @@
-import React from "react"
-import DarkMode from "../components/DarkMode"
-import { Link, NavLink } from "react-router-dom"
+import React from "react";
+import DarkMode from "../components/DarkMode";
 
-export default function Header() {
+export default function Header({ themeColor, setThemeColor }) {
     return (
         <header>
             <div>Hello</div>
-            <DarkMode />
+            <DarkMode themeColor={themeColor} setThemeColor={setThemeColor} />
         </header>
-    )
+    );
 }

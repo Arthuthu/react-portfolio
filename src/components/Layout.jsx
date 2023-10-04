@@ -1,16 +1,18 @@
-import React from "react"
-import {Outlet} from "react-router-dom"
-import Header from "./Header"
-import Footer from "./Footer"
+import React, { useState } from "react";
+import { Outlet } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Layout() {
-    return(
+    const [themeColor, setThemeColor] = useState("dark");
+
+    return (
         <div>
-            <Header />
+            <Header themeColor={themeColor} setThemeColor={setThemeColor} />
             <main>
                 <Outlet />
             </main>
-            <Footer />
+            <Footer themeColor={themeColor} setThemeColor={setThemeColor}/>
         </div>
-    )
+    );
 }
