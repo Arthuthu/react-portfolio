@@ -18,7 +18,7 @@ export default function Home() {
         <>
             <div>
                 <div className="profile-pic-div">
-                    <img src={`src/assets/imgs/profile/${profilePicture}.png`} onClick={changeProfilePicture}
+                    <img src={`/imgs/profile/${profilePicture}.png`} onClick={changeProfilePicture}
                     alt="profile-picture" className="profile-pic"/>
                 </div>
             </div>
@@ -172,7 +172,7 @@ export default function Home() {
                             Roadmaps
                         </div>
                         <Link to="/roadmap">
-                            <img src="/imgs\projects\Roadmap\1.png" className="index-project-picture" />
+                            <img src="/imgs/projects/Roadmap/1.png" className="index-project-picture" />
                         </Link>
                     </div>
                     <div className="project-div">
@@ -180,7 +180,7 @@ export default function Home() {
                             Antigo portfólio
                         </div>
                         <Link to="oldportfolio">
-                            <img src="/imgs\projects\OldPortfolio\1.png" className="index-project-picture" />
+                            <img src="/imgs/projects/OldPortfolio/1.png" className="index-project-picture" />
                         </Link>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ export default function Home() {
                             NetCore
                         </div>
                         <Link to="netcoreapp">
-                            <img src="/imgs\projects\NetCoreApp\1.png" className="index-project-picture" />
+                            <img src="/imgs/projects/NetCoreApp/1.png" className="index-project-picture" />
                         </Link>
                     </div>
                     <div className="project-div">
@@ -198,7 +198,7 @@ export default function Home() {
                             Clinica
                         </div>
                         <Link to="clinica">
-                            <img src="/imgs\projects\Clinica\1.png" className="index-project-picture" />
+                            <img src="/imgs/projects/Clinica/1.png" className="index-project-picture" />
                         </Link>
                     </div>
                 </div>

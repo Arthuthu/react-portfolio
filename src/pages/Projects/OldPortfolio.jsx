@@ -56,7 +56,7 @@ export default function OldPortfolio() {
                     <button onClick={incrementSlidePosition} className="carousel-button next">&#8658;</button>
                     <ul className="project-images-div" data-slides>
                         <li className="slide" data-active>
-                            <img src={`src/assets/imgs/projects/OldPortfolio/${slidePosition}.png`} className="project-page-picture" alt="Imagem projeto"/>
+                            <img src={`/imgs/projects/OldPortfolio/${slidePosition}.png`} className="project-page-picture" alt="Imagem projeto"/>
                         </li>
                     </ul>
                 </div>
