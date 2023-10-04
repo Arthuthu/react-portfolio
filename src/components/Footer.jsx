@@ -13,7 +13,8 @@ export default function Footer() {
                 <div className="contato-info-div">
                     <div>
                         <img className="contact-icon" alt="whatsapp-icon" 
-                        src={themeColor === "dark" ? `/imgs/light-whatsapp-icon.png` : `/imgs/dark-whatsapp-icon.png`}/>
+                        src={themeColor === "dark" ? `/imgs/footer-icons/light-whatsapp-icon.png` 
+                        : `/imgs/footer-icons/dark-whatsapp-icon.png`}/>
                     </div>
                     <div className="display-flex-justify-evenly">
                         <div className="contact-section-title">
@@ -27,7 +28,8 @@ export default function Footer() {
                 <div className="contato-info-div">
                     <div>
                         <img className="contact-icon" alt="github-icon" 
-                        src={themeColor === "dark" ? `/imgs/light-github-icon.png` : `/imgs/dark-github-icon.png`}/>
+                        src={themeColor === "dark" ? `/imgs/footer-icons/light-github-icon.png` 
+                        : `/imgs/footer-icons/dark-github-icon.png`}/>
                     </div>
                     <a href="https://github.com/Arthuthu" className="link">
                         Github
@@ -38,7 +40,8 @@ export default function Footer() {
                 <div className="contato-info-div">
                     <div>
                         <img className="contact-icon" alt="email-icon" 
-                        src={themeColor === "dark" ? `/imgs/light-email-icon.png` : `/imgs/dark-email-icon.png`}/>
+                        src={themeColor === "dark" ? `/imgs/footer-icons/light-email-icon.png` 
+                        : `/imgs/footer-icons/dark-email-icon.png`}/>
                     </div>
                     <div className="display-flex-justify-evenly">
                         <div className="contact-section-title">
@@ -52,7 +55,8 @@ export default function Footer() {
                 <div className="contato-info-div">
                     <div>
                         <img className="contact-icon" alt="linkedin-icon"   
-                        src={themeColor === "dark" ? `/imgs/light-linkedin-icon.png` : `/imgs/dark-linkedin-icon.png`}/>
+                        src={themeColor === "dark" ? `/imgs/footer-icons/light-linkedin-icon.png` 
+                        : `/imgs/footer-icons/dark-linkedin-icon.png`}/>
                     </div>
                     <a href="https://www.linkedin.com/in/arthur-geromello-ab44a8159/" className="link">
                         Linkedin

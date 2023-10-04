@@ -3,6 +3,8 @@ import '../css/site.css';
 
 export default function DarkMode({ themeColor, setThemeColor }) {
 
+    console.log(themeColor)
+
     let clickedClass = "clicked";
     const body = document.body;
     const lightTheme = "light";
@@ -32,10 +34,9 @@ export default function DarkMode({ themeColor, setThemeColor }) {
     }
 
     return (
-        <button
-            className={themeColor === "dark" ? clickedClass : ""}
-            id="darkMode"
-            onClick={(e) => switchTheme(e)}
-        ></button>
+        <div className="center-text" onClick={(e) => switchTheme(e)}>
+            <img src={themeColor === "dark" ? "/imgs/moonicon.png" : "/imgs/sunicon.png"}
+                className="theme-icon"/>
+        </div>
     );
 };

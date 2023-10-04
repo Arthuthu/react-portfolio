@@ -71,6 +71,13 @@ body.light .competencias {
     margin: 2rem;
 }
 
+.theme-icon {
+    margin: 20px 0 0 0;
+    max-width: 40px;
+    max-height: 40px;
+    cursor: pointer;
+}
+
 .profile-pic-div {
     text-align: center;
     margin: 50px 0;
