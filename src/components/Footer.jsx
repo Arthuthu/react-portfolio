@@ -16,13 +16,10 @@ export default function Footer() {
                         src={themeColor === "dark" ? `/imgs/footer-icons/light-whatsapp-icon.png` 
                         : `/imgs/footer-icons/dark-whatsapp-icon.png`}/>
                     </div>
-                    <div className="display-flex-justify-evenly">
-                        <div className="contact-section-title">
-                            Whatsapp:
-                        </div>
-                        <div>
-                            (17) 99782-4891
-                        </div>
+                    <div>
+                        <a href="https://wa.me/+5517997824891/" className="link">
+                            Whatsapp: (17) 99782-4891
+                        </a>
                     </div>
                 </div>
                 <div className="contato-info-div">

@@ -7,6 +7,7 @@ import NetCoreApp from "./pages/Projects/NetCoreApp"
 import Roadmap from "./pages/Projects/Roadmap"
 import OldPortfolio from "./pages/Projects/OldPortfolio"
 import NotFound from "./pages/NotFound"
+import ScrollToTop from './components/ScrollToTop'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Layout />}>
