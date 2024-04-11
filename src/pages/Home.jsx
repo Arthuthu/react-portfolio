@@ -27,7 +27,7 @@ export default function Home() {
                 <div className="info-description">
                     <div className="info-paragraph">
                         Olá, meu nome é Arthur de Castro Geromello.
-                        Tenho 24 anos, sou desenvolvedor FullStack, Engenheiro da Computação.
+                        Tenho 25 anos, sou desenvolvedor FullStack, Engenheiro da Computação.
                     </div>
                     <div className="info-paragraph">
                         Minhas principais áreas de expertise incluem C#, SQL, HTML, Javascript, React, Blazor e Docker.
@@ -35,17 +35,12 @@ export default function Home() {
                         tecnologias e as melhoras práticas da programação.
                     </div>
                     <div className="info-paragraph">
-                        Hoje em dia para mim, programação se tornou um lifestyle, meu objetivo é se tornar um desenvolvedor
-                        extremamente capaz de resolver qualquer problema da melhor maneira possível.
+                        Hoje em dia para mim, programar se tornou um lifestyle, meu objetivo é se tornar um desenvolvedor
+                        capaz de resolver qualquer problema da melhor maneira possível.
                     </div>
                     <div className="info-paragraph">
                         Neste portfólio, apresento os meus projetos que desenvolvi.
                         Além da programação, tenho um grande interesse em colaboração e aprendizado em equipe.
-                        Acredito que as melhores soluções surgem quando diferentes mentes se unem em busca de um objetivo comum.
-                    </div>
-                    <div className="info-paragraph">
-                        Agradeço por visitar meu portfólio e ficarei feliz em receber seu feedback e responder a qualquer pergunta que você possa ter.
-                        Atenciosamente, Arthur de Castro Geromello.
                     </div>
                 </div>
             </div>
@@ -148,14 +143,11 @@ export default function Home() {
                             <div className="center-margin">
                                 Ja faz muito tempo que eu venho estudando e utilizando o Inglês
                                 no meu dia a dia, e hoje eu posso dizer que eu práticamente tenho um Inglês fluente.
-                                Todo conteúdo que eu pesquiso ou estudo sobre na internet, primeiramente eu pesquiso em
-                                Inglês, e devido a isso, aprender se torna mais facil.
                             </div>
                             <div className="competencias-label">Engenheiro da Computação - UNIFEV (Centro Universitário de Votuporanga)</div>
                             <div className="center-margin">
-                                Eu ja estou no meu ultimo ano da Engenharia de Computação e ganhei muito conhecimento durante todo esse tempo.
-                                Hoje eu ja sei a carreira que eu quero seguir e pretendo continuar estudando continuamente para poder me 
-                                aperfeiçoar cada vez mais.
+                                Ja sou formado em Engenharia da Computação e estou criando minha carreira na programação como desenvolvedor FullStack Web
+                                utilizando C# para o BackEnd, Blazor/React para FrontEnd.
                             </div>
                         </div>
                     </div>
